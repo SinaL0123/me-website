@@ -1,0 +1,152 @@
+:root{
+    --pink: #ff8fb3;
+    --pink-2: #ffd1e1;
+    --yellow: #ffe08a;
+    --yellow-2: #fff3bf;
+    --bg: #fff9fb;   
+    --text: #3a2e2e;  
+    --card: #ffffffee; 
+  }
+
+  .fredericka-the-great-regular {
+    font-family: "Fredericka the Great", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+  
+  *{ box-sizing: border-box; }
+  
+  html, body{
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+    font-family: "Fredericka the Great", serif;
+    color: var(--text);
+    background:
+      radial-gradient(1200px 400px at -10% -10%, #ffeef6 0%, transparent 60%),
+      radial-gradient(900px 300px at 110% -10%, #fff7d6 0%, transparent 60%),
+      radial-gradient(600px 250px at 50% 110%, #ffeef6 0%, transparent 60%),
+      var(--bg);
+    line-height: 1.65;
+    padding: 40px 20px;  
+  }
+  
+  body > *{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+
+  .title {text-align:center;}
+
+  h1 {
+    display: inline-block;      
+    margin: 32px 0 16px 0;
+    padding: 10px 5px;
+    line-height: 1.25;
+    font-weight: 800;
+    letter-spacing: .2px;
+    color: rgb(150, 15, 69);
+    }
+  
+  h1::after {
+    display: block;
+  }
+
+  h2 {
+    display: block;  
+    width: fit-content;           
+    margin: 40px 0 20px 0;     
+    padding: 5px 20px;
+    color: #8a3360;
+    background: linear-gradient(90deg, var(--yellow), var(--pink-2));
+    border-radius: 16px;
+    box-shadow: 0 6px 14px -6px rgba(255, 143, 179, .6);            
+  }
+  
+  h2::after{
+    content: " ✦";
+    color: #b85c86;
+  }
+  
+  h3{
+    margin: auto;
+    font-weight: 700;
+    color: #7b2d57;
+    display: inline-flex;
+    align-items: center;
+    gap: .5ch;
+    position: relative;
+  }
+  h3 i{ font-style: normal; }
+  h3::after{
+    content: "";
+    height: 6px;
+    width: 90px;
+    margin-left: 10px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, var(--pink), var(--yellow));
+    display: inline-block;
+    opacity: .7;
+  }
+  
+  /* paragraph */
+  p{
+    background: var(--card);
+    border: 2px dashed var(--pink-2);
+    border-left: 6px solid var(--pink);
+    padding: 14px 16px;
+    margin: 10px auto 18px;
+    border-radius: 16px;
+    box-shadow: 0 10px 22px -12px rgba(0,0,0,.15);
+    transition: transform .15s ease, box-shadow .15s ease, border-color .2s ease;
+  }
+  p:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 16px 28px -14px rgba(0,0,0,.18);
+    border-color: var(--pink);
+  }
+  
+  
+  e{
+    background: linear-gradient(180deg, var(--yellow-2), #fff);
+    border: 1.5px solid var(--yellow);
+    padding: .08em .45em;
+    border-radius: 999px;
+    font-weight: 700;
+    color: #7a5a00;
+    white-space: nowrap;
+  }
+  
+  a{
+    color: #b2457a;
+    text-decoration: none;
+    border-bottom: 2px solid #ffc7de;
+    transition: border-color .2s ease, color .2s ease;
+  }
+  a:hover{
+    color: #8a3360;
+    border-bottom-color: var(--pink);
+  }
+
+  /* Responsive design */
+  @media (max-width: 520px){
+    h1 {
+      font-size: 1.4rem;
+      padding: 8px 14px;
+      margin: 24px 0 12px 0;
+    }
+    h2{ font-size: 1.25rem; }
+    h3{ font-size: 1.1rem; }
+    p{ padding: 12px 14px; }
+  }
+  
